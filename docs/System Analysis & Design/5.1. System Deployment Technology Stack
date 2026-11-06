@@ -1,0 +1,162 @@
+# 5. System Deployment & Integration
+
+## 5.1 Technology Stack
+
+### 5.1.1 Overview
+
+PortfolioGenie is an AI-powered web application designed to help junior developers create professional developer portfolios through GitHub integration and AI-assisted content generation.
+
+The system uses a modern web technology stack consisting of frontend technologies, backend technologies, database management, and external API integrations. These technologies work together to provide a responsive, scalable, and maintainable platform.
+
+The selected technology stack supports the main functionalities of PortfolioGenie, including user authentication, developer profile management, GitHub repository integration, AI-powered content generation, portfolio customization, live preview, and portfolio publishing.
+
+### 5.1.2 Frontend Technologies
+
+The frontend represents the presentation layer of PortfolioGenie. It provides the user interface through which developers interact with the platform and manage their portfolios.
+
+**React.js**
+
+React.js is used to build the interactive and reusable user interface components of the application. It supports the development of dynamic interfaces for profile management, project selection, AI content generation, portfolio customization, and live preview.
+
+**Vite**
+
+Vite is used as the frontend build tool and development server. It provides a fast development environment and an optimized production build.
+
+**JavaScript**
+
+JavaScript is used to implement the frontend functionality and interactive behavior of the application.
+
+**Bootstrap**
+
+Bootstrap is used to design a responsive and consistent user interface. It provides a collection of predefined CSS components, layout utilities, and responsive grid systems that facilitate the development of interfaces compatible with different screen sizes.
+
+**React Router**
+
+React Router is used to manage client-side navigation between application pages, such as the dashboard, profile editor, project management page, and portfolio builder.
+
+**Axios**
+
+Axios is used to send HTTP requests from the frontend to the backend REST API. It facilitates communication for retrieving and updating user profiles, projects, and portfolio information.
+
+**React Hooks**
+
+React Hooks, including `useState` and `useEffect`, are used to manage component state and handle side effects. Custom Hooks may also be implemented to reuse application logic.
+
+### 5.1.3 Backend Technologies
+
+The backend represents the application layer of PortfolioGenie. It handles business logic, processes user requests, manages application data, and communicates with external services.
+
+**Node.js**
+
+Node.js provides the server-side runtime environment for executing JavaScript code. It supports the development of an efficient backend capable of handling API requests and external service communication.
+
+**Express.js**
+
+Express.js is used as the backend web framework. It provides the structure for implementing RESTful APIs, handling HTTP requests, defining routes, and managing middleware.
+
+The backend is responsible for:
+
+- Processing authentication requests.
+- Managing developer profiles.
+- Handling project information.
+- Integrating with GitHub REST API.
+- Communicating with the external AI API.
+- Managing portfolio creation and publishing.
+- Validating and processing incoming requests.
+
+**RESTful APIs**
+
+RESTful APIs provide the communication interface between the React frontend and the Express backend.
+
+They allow the frontend to perform operations such as creating, retrieving, updating, and deleting user profiles, projects, and portfolio information.
+
+### 5.1.4 Database Technologies
+
+**MongoDB**
+
+MongoDB is used as the primary database management system for storing application data.
+
+Its document-oriented structure is suitable for storing flexible developer profile information, project details, and portfolio configurations.
+
+The database stores information such as:
+
+- User accounts.
+- Developer profiles.
+- Technical skills.
+- Education and experience.
+- Project information.
+- AI-generated and user-edited content.
+- Portfolio configurations.
+- Publishing-related information.
+
+**Mongoose**
+
+Mongoose is used as an Object Data Modeling (ODM) library for MongoDB.
+
+It provides schema definitions, data validation, and structured interactions between the backend application and the database.
+
+### 5.1.5 External API Integrations
+
+**GitHub REST API**
+
+GitHub REST API is integrated into PortfolioGenie to retrieve available public repository information.
+
+The integration allows users to import relevant projects and use repository information, such as repository names, descriptions, programming languages, and URLs, to support portfolio creation.
+
+This integration reduces the need for users to manually enter all project information.
+
+**External AI API**
+
+An external AI API is used to provide intelligent content generation capabilities.
+
+The AI integration supports:
+
+- Generating professional About Me sections.
+- Generating project descriptions.
+- Improving existing portfolio content.
+- Enhancing content readability.
+- Supporting SEO-friendly content generation.
+
+The backend communicates with the AI service and returns the generated content to the frontend, where users can review and edit it before saving.
+
+### 5.1.6 Technology Stack Summary
+
+The following table summarizes the main technologies used in PortfolioGenie.
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| Frontend | React.js | Building interactive user interfaces |
+| Build Tool | Vite | Frontend development and production builds |
+| Programming Language | JavaScript | Application logic |
+| Styling | Bootstrap | Responsive interface design |
+| Routing | React Router | Client-side navigation |
+| HTTP Client | Axios | API communication |
+| Backend Runtime | Node.js | Server-side execution |
+| Backend Framework | Express.js | REST API development |
+| API Architecture | RESTful APIs | Frontend-backend communication |
+| Database | MongoDB | Application data storage |
+| ODM | Mongoose | Database modeling and validation |
+| External Integration | GitHub REST API | Repository data retrieval |
+| AI Integration | External AI API | AI-powered content generation |
+| Version Control | Git | Source code version management |
+| Code Repository | GitHub | Project collaboration and code hosting |
+
+### 5.1.7 Technology Selection Justification
+
+The technology stack was selected based on the functional and technical requirements of PortfolioGenie.
+
+The use of React.js supports the development of reusable and interactive user interfaces. Node.js and Express.js provide a flexible backend environment for handling application logic and API communication.
+
+MongoDB offers a flexible document-based data model that can accommodate the different structures of developer profiles, projects, and portfolio configurations.
+
+The integration of GitHub REST API enables automated retrieval of available repository information, while the external AI API provides intelligent content generation capabilities.
+
+Additionally, the use of JavaScript across the frontend and backend simplifies development and improves consistency within the project.
+
+Together, these technologies provide a suitable foundation for developing PortfolioGenie as a maintainable and extensible web application.
+
+### 5.1.8 Conclusion
+
+The selected technology stack provides the essential technical foundation for PortfolioGenie. It supports the development of an interactive frontend, a backend responsible for application logic, a database for persistent data storage, and external integrations for GitHub data retrieval and AI-powered content generation.
+
+The combination of these technologies enables the system to deliver its main objective: simplifying the process of creating professional developer portfolios through automation, customization, and artificial intelligence.
